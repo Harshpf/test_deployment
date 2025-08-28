@@ -7,9 +7,9 @@ app.get('/', (req, res) => {
     res.json({ message: 'Hello, world!' });
 });
 
-app.get('/api/user', (req, res) => {
-    res.json({ message: 'other are also working' });
-});
+// app.get('/api/user', (req, res) => {
+//     res.json({ message: 'other are also working' });
+// });
 
 // const PORT = 3000;
 // app.listen(PORT, () => {
