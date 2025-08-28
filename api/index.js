@@ -15,6 +15,6 @@ router.get('/user', (req, res) => {
 });
 
 // Mount the router at root (no /api)
-app.use('/', router);
+app.use('/api', router);
 
 module.exports = serverless(app);
