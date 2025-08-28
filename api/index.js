@@ -14,7 +14,7 @@ router.get('/user', (req, res) => {
     res.json({ message: 'other are also working' });
 });
 
-// Mount the router on /api
-app.use('/api', router);
+// Mount the router at root (no /api)
+app.use('/', router);
 
 module.exports = serverless(app);
